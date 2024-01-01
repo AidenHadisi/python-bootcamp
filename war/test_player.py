@@ -42,7 +42,3 @@ class TestPlayer(unittest.TestCase):
         # Test removing a card from an empty hand (should raise IndexError)
         with self.assertRaises(IndexError):
             self.player.remove_card()
-
-
-if __name__ == "__main__":
-    unittest.main()
