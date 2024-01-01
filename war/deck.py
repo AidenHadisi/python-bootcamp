@@ -13,14 +13,18 @@ class Deck:
         """Initialize the deck."""
         self._cards = [Card(s, r) for s in self.suites for r in self.ranks]
 
-    def shuffle(self: Deck) -> None:
-        """Shuffle the deck."""
-        shuffle(self._cards)
-
     @property
     def cards(self: Deck) -> list:
         """Return the cards in the deck."""
         return self._cards
+
+    def shuffle(self: Deck) -> None:
+        """Shuffle the deck."""
+        shuffle(self._cards)
+
+    def deal(self: Deck) -> Card:
+        """Deal a card from the deck."""
+        return self._cards.pop()
 
 
 if __name__ == "__main__":
