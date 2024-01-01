@@ -6,7 +6,7 @@ from functools import total_ordering
 class Card:
     """A playing card."""
 
-    def __init__(self: Card, suit: str, rank: str) -> Card:
+    def __init__(self: Card, suit: str, rank: str) -> None:
         self.suit = suit
         self.rank = rank
 

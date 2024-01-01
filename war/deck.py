@@ -9,7 +9,7 @@ class Deck:
     ranks = [str(n) for n in range(2, 11)] + list("JQKA")
     suites = ["Clubs", "Diamonds", "Hearts", "Spades"]
 
-    def __init__(self: Deck) -> Deck:
+    def __init__(self: Deck) -> None:
         """Initialize the deck."""
         self._cards = [Card(s, r) for s in self.suites for r in self.ranks]
 
